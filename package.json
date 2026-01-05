@@ -12,6 +12,8 @@
     "test": "npx playwright test",
     "test:pm": "npx playwright test tests/pm.spec.js",
     "test:pm:comprehensive": "npx playwright test tests/pm-comprehensive.spec.js",
+    "analyze:pm": "node analyze-pm-structure.js",
+    "analyze:pm:ps": "powershell -ExecutionPolicy Bypass -File analyze-pm-structure.ps1",
     "test:accounting": "npx playwright test tests/accounting.spec.js",
     "test:ui": "npx playwright test --ui",
     "report:show": "npx playwright show-report"
