@@ -1,0 +1,37 @@
+{
+  "name": "capium-beta-audit",
+  "version": "1.0.0",
+  "description": "Comprehensive QA audit and automation for Capium Beta",
+  "main": "index.js",
+  "scripts": {
+    "auth": "node auth.js",
+    "crawl": "node crawl.js",
+    "journeys": "node journeys.js",
+    "report": "node generate-report.js",
+    "find-selectors": "node find-selectors.js",
+    "test": "npx playwright test",
+    "test:pm": "npx playwright test tests/pm.spec.js",
+    "test:pm:comprehensive": "npx playwright test tests/pm-comprehensive.spec.js",
+    "test:accounting": "npx playwright test tests/accounting.spec.js",
+    "test:ui": "npx playwright test --ui",
+    "report:show": "npx playwright show-report"
+  },
+  "keywords": [
+    "qa",
+    "automation",
+    "playwright",
+    "accessibility",
+    "audit"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@axe-core/playwright": "^4.10.0",
+    "@playwright/test": "^1.48.0",
+    "csv-writer": "^1.6.0",
+    "dotenv": "^16.4.5",
+    "fast-csv": "^4.3.6",
+    "fs-extra": "^11.2.0",
+    "playwright": "^1.48.0"
+  }
+}
